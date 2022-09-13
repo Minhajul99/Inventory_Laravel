@@ -19,6 +19,11 @@ Route::controller(AdminController::class)->group(function(){
 
     Route::get('/admin/logout', 'destroy')->name('admin.logout');
     Route::get('/admin/profile', 'Profile')->name('admin.profile');
+    Route::get('/edit/profile', 'Edit')->name('edit.profile');
+    Route::post('/store/profile', 'Store')->name('store.profile');
+
+    Route::get('/change/password', 'Change_Password')->name('change.password');
+    Route::post('/update/password', 'Update_Password')->name('update.password');
 });
 
 
